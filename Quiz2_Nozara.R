@@ -141,7 +141,7 @@ for (num in Maneskin) {
 # Define the Maneskin vector
 Maneskin <- seq(1, 1000)
 
-Maneskin <- c(1, 3, 7, 21, 35, 42, 45, 49, 70)
+
 
 # Loop structure to print the sequence as per the conditions
 for (chosen in 1:length(Maneskin)) {
