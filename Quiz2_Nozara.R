@@ -109,8 +109,6 @@ print(covid$Age)
 
 # Create the sequence of integers from 1 to 1000 and name it Maneskin
 Maneskin <- seq(1, 1000)
-
-# View the Maneskin vector
 print(Maneskin)
 
 #Question 8
@@ -144,18 +142,23 @@ for (num in Maneskin) {
 # Define the Maneskin vector
 Maneskin <- seq(1, 1000)
 
+Maneskin <- c(1, 3, 7, 21, 35, 42, 45, 49, 70)
+
 # Loop structure to print the sequence as per the conditions
 for (chosen in 1:length(Maneskin)) {
-  if (Maneskin[chosen] %% 3 == 0 & Maneskin[chosen] %% 7 != 0) {
-    print("Zitti")
-  } else if (Maneskin[chosen] %% 7 == 0 & Maneskin[chosen] %% 3 != 0) {
-    print("Buoni")
-  } else if (Maneskin[chosen] %% 3 == 0 & Maneskin[chosen] %% 7 == 0) {
+  if (Maneskin[chosen] %% 3 == 0 && Maneskin[chosen] %% 7 == 0) {
     print(Maneskin[chosen])
+  } else if (Maneskin[chosen] %% 3 == 0) {
+    print("Zitti")
+  } else if (Maneskin[chosen] %% 7 == 0) {
+    print("Buoni")
   } else {
     print(Maneskin[chosen])
   }
 }
+
+
+
 
 
 #Question 11
