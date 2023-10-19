@@ -10,8 +10,7 @@ covid <- read.csv(file.choose(), sep=";")
 
  
 #Formatting of variables
-
-typeof(X)
+#type of x is numeric
 typeof(covid$covid$Hospitalization.type)
 typeof(covid$Symptoms)
 typeof(covid$Outcome)
